@@ -10,16 +10,62 @@ Recommended VSCode extenions:
 > Tailwind CSS IntelliSense, ESLint, Prettier Now
 
 VsCode Settings:  
->  "eslint.autoFixOnSave": false,  
->  "eslint.alwaysShowStatus": true,  
->  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,  
->  "typescript.format.insertSpaceBeforeFunctionParenthesis": true,  
->  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,  
->  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,  
->  "css.validate": false,  
->  "css.lint.unknownAtRules": "ignore",  
->  "css.lint.unknownProperties": "ignore",  
->  "javascript.validate.enable": false,  
+``` bash
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.options": {
+    "extensions": [
+      ".html",
+      ".js",
+      ".vue",
+      ".jsx"
+    ]
+  },
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    }
+  ],
+  "eslint.autoFixOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.bracketSpacing": false,
+  "prettier.bracesSpacing": false,
+  "prettier.useTabs": false,
+  "prettier.tabWidth": 2,
+  "prettier.printWidth": 80,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "typescript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.format.enable": false,
+  "css.validate": false,
+  "css.lint.unknownAtRules": "ignore",
+  "css.lint.unknownProperties": "ignore",
+  ```
 
 ## Build Setup
 
